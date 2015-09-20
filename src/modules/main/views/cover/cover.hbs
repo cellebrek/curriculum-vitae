@@ -1,0 +1,37 @@
+{{#each items}}
+	<article class="blog-preview__article" data-id="{{id}}">
+
+		{{#if slider}}
+			<ul class="slider" data-slider>
+				{{#each slider}}
+					<li class="slider__item slide" data-slider-item>
+						<div class="slider__item-information">
+							<h2 class="slider__item-title slider__item-text">{{title}}</h2>
+							<div class="slider__item-label slider__item-text">{{label}}</div>
+						</div>
+						<img src="{{src}}" alt="" class="slider__item-image" width="100%">
+					</li>
+				{{/each}}
+			</ul>
+		{{/if}}
+
+		<div class="blog-preview__article-description">
+			<h2 class="blog-preview__article-title">{{title}}</h2>
+			<div class="blog-preview__article-content">{{{content}}}</div>
+
+			<button class="btn btn__more">Read more</button>
+		</div>
+
+		{{#if gallery}}
+			<div class="gallery">
+				<ul class="gallery__list" data-gallery>
+					{{#each gallery}}
+						<li class="gallery__item"><a href="{{full}}"><img src="{{thumb}}" alt="" width="100%"></a></li>
+					{{/each}}
+				</ul>
+			</div>
+		{{/if}}
+
+	</article>
+{{/each}}
+

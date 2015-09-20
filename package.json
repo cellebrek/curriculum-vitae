@@ -1,0 +1,32 @@
+{
+  "name": "Marionette-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Alexandre Rieux",
+  "license": "BSD",
+  "devDependencies": {
+    "browserify": "10.2.4",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-browserify": "3.8.0",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-pngmin": "^1.0.0",
+    "grunt-targethtml": "^0.2.6",
+    "hbsfy": "^2.2.1",
+    "path": "^0.11.14"
+  },
+  "private": true,
+  "dependencies": {
+    "backbone": "1.2.1",
+    "backbone.localstorage": "^1.1.16",
+    "backbone.marionette": "^2.4.1",
+    "handlebars": "^3.0.3",
+    "jquery": "^2.1.0",
+    "magnific-popup": "^1.0.0",
+    "slick-carousel": "^1.5.6",
+    "underscore": "^1.8.2"
+  }
+}
