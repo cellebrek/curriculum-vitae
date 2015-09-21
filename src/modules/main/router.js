@@ -11,7 +11,7 @@ module.exports = Marionette.AppRouter.extend({
 
     appRoutes: {
     	'': 'indexAction',
-        'blog': 'blogAction',
+        'resume': 'resumeAction',
     }
 
 });

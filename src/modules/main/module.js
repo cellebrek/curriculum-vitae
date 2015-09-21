@@ -16,7 +16,7 @@ module.exports = Marionette.Module.extend({
 
         this.addInitializer(function(){
             this.app.addRegions({
-                appContainer: '.app'
+                appContainer: 'body'
             });
 
             this.app.appContainer.show(layoutView);
