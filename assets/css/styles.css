@@ -227,6 +227,8 @@ svg {
   margin: 0;
   text-align: center;
   font-size: 8rem;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 .l-resume h1:nth-child(1) {
   font-size: 10rem;

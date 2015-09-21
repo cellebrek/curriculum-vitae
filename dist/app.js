@@ -963,7 +963,7 @@ module.exports = Marionette.AppRouter.extend({
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<div data-resume></div>\r\n";
+    return "<div data-resume></div>\n";
 },"useData":true});
 
 },{"hbsfy/runtime":10}],16:[function(require,module,exports){
@@ -990,7 +990,7 @@ module.exports = Marionette.LayoutView.extend({
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n<h1>hello world</h1>\r\n";
+    return "<h1>hello world</h1>\n<h1>hello world</h1>\n<h1>hello world</h1>\n<h1>hello world</h1>\n<h1>hello world</h1>\n<h1>hello world</h1>\n<h1>hello world</h1>\n<h1>hello world</h1>\n";
 },"useData":true});
 
 },{"hbsfy/runtime":10}],18:[function(require,module,exports){
