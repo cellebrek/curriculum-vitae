@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                 force: true
             },
             compress: {
-                expand: true, 
+                expand: true,
                 src: ['assets/media/**.png', 'assets/media/**/*.png']
             }
         },
@@ -71,22 +71,22 @@ module.exports = function (grunt) {
                 options: {
                     compress: false
                 },
-                src: ['assets/css/app.styl'],
-                dest: 'assets/css/app.css'
+                src: ['assets/css/styles.styl'],
+                dest: 'assets/css/styles.css'
             },
             'prod': {
                 options: {
                     compress: true
                 },
-                src: ['assets/css/app.styl'],
-                dest: 'assets/css/app.css'
+                src: ['assets/css/styles.styl'],
+                dest: 'assets/css/styles.css'
             }
         },
 
         autoprefixer: {
             compile: {
-                src: 'assets/css/app.css',
-                dest: 'assets/css/app.css'
+                src: 'assets/css/styles.css',
+                dest: 'assets/css/styles.css'
             }
             
         },

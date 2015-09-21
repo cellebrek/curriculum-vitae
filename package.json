@@ -2,7 +2,7 @@
   "name": "Marionette-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "author": "Alexandre Rieux",
+  "author": "cellebrek",
   "license": "BSD",
   "devDependencies": {
     "browserify": "10.2.4",
@@ -26,6 +26,7 @@
     "handlebars": "^3.0.3",
     "jquery": "^2.1.0",
     "magnific-popup": "^1.0.0",
+    "normalize.css": "^3.0.3",
     "slick-carousel": "^1.5.6",
     "underscore": "^1.8.2"
   }
