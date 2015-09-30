@@ -4,27 +4,55 @@
 }
 
 .l-resume__wrapper {
+	position: relative;
     display: inline-block;
-    padding: 20px 20px;
+    padding: 20px 30px;
+	box-shadow: 2px 2px 20px -10px rgba(0,0,0,0.5);
     background: white;
-    max-width: 900px;
+	width: 100%;
+    max-width: 1000px;
     text-align: left;
-	
+
 	@media $medium {
-		padding: 20px 40px;
+	    padding: 140px 40px 20px 40px;
+		width: auto;
+		min-width: 1000px;
 	}
 }
 
 .l-resume__title {
-    text-align: right;
-	
+	position: relative;
+	padding-right: 20px;
+
+	&:before {
+		content: "/";
+	    position: absolute;
+		top: 36px;
+	    right: -10px;
+	    line-height: 0;
+	    font-weight: 700;
+	    font-size: 6.5rem;
+
+		@media $medium {
+			top: 26px;
+			right: auto;
+		    left: -40px;
+		}
+	}
+
+	@media $medium {
+	    position: absolute;
+		right: 30px;
+	    top: 40px;
+	}
+
 	h1 {
 		margin: 0;
 	    line-height: 35px;
 		font-size: 4rem;
 	    font-weight: 700;
 	}
-	
+
 	h2 {
 	    margin: 0;
 	    text-transform: uppercase;
@@ -36,24 +64,15 @@
 .l-resume__category {
     padding: 20px 0;
     font-size: 0;
-	
+
 	h3 {
 	    margin: 0 0 10px 0;
 		text-align: left;
 		font-weight: 700;
 	    font-size: 1.5rem;
-		
+
 		@media $medium {
 			text-align: right;
-		}
-	}
-	
-	li {
-	    padding: 2px 0;
-		
-		span {
-			font-weight: 400;
-			color: #575757;
 		}
 	}
 }
@@ -64,11 +83,12 @@
 	padding: 0;
     margin: 0;
     list-style: none;
-	
+
 	li {
+		position: relative;
 		font-size: 1.6rem;
 	}
-	
+
 	@media $medium {
 		display: inline-block;
 	}
@@ -78,10 +98,12 @@
     padding-right: 8px;
     width: 25%;
     text-align: right;
-	
+
 	> li {
 		display: none;
-		
+		font-weight: 300;
+	    color: #575757;
+
 		@media $medium {
 			display: block;
 		}
@@ -91,32 +113,61 @@
 .l-resume__detail-list {
     border-left: 2px solid #ddd;
     padding-left: 8px;
-	width: 75%;
-	
+	width: 100%;
+
+	@media $medium {
+		width: 75%;
+	}
+
 	> h3 {
 		display: none;
-		
+
 		@media $medium {
 			display: block;
 		}
 	}
-	
+
 	h3 {
 		color: white;
 	}
-	
+
 	li {
-		
+	    margin: 15px 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		h3 {
+		    display: none;
+
+			@media $medium {
+				display: block;
+			}
+		}
+
 		p {
-			margin: 0;
+	        margin: 3px 0;
 		}
 	}
 }
 
+.l-resume__detail-list--personal {
+
+	li {
+		margin: 0;
+	}
+}
+
 .l-resume__date {
+    margin: 10px 0 5px 0;
     font-weight: 700;
 	font-size: 1.6rem;
-	
+
 	&:before {
 	    content: "";
 	    width: 8px;
@@ -131,20 +182,14 @@
 
 .l-resume__float-detail {
 	display: none;
-    position: absolute;
-    margin-left: -80px;
-    text-align: right;
-	
+	position: absolute;
+	left: -150px;
+	text-align: right;
+	width: 130px;
+	font-weight: 300;
+	color: #575757;
+
 	@media $medium {
 		display: block;
 	}
 }
-
-// &:nth-child(1) { font-size: 8vw; font-style: normal; font-weight: 700; }
-// &:nth-child(2) { font-size: 7vw; font-style: normal; font-weight: 500; }
-// &:nth-child(3) { font-size: 6vw; font-style: normal; font-weight: 400; }
-// &:nth-child(4) { font-size: 5vw; font-style: normal; font-weight: 200; }
-// &:nth-child(5) { font-size: 4vw; font-style: normal; font-weight: 100 }
-// &:nth-child(6) { font-size: 4vw; font-style: italic; font-weight: 400; }
-// &:nth-child(7) { font-size: 5vw; font-style: italic; font-weight: 500; }
-// &:nth-child(8) { font-size: 6vw; font-style: italic; font-weight: 700; }

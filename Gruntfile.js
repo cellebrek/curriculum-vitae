@@ -83,12 +83,18 @@ module.exports = function (grunt) {
             }
         },
 
-        autoprefixer: {
-            compile: {
-                src: 'assets/css/styles.css',
-                dest: 'assets/css/styles.css'
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: ['last 2 versions']
+                    })
+                ]
+            },
+            dist: {
+                src: 'assets/css/styles.css'
             }
-            
         },
 
         watch: {
@@ -99,7 +105,7 @@ module.exports = function (grunt) {
             },
             src: {
                 files: ['src/**/*', '!src/index.html', 'assets/css/*.styl', 'assets/css/**/*.styl'],
-                tasks: ['browserify:app', 'stylus:dev', 'autoprefixer'],
+                tasks: ['browserify:app', 'stylus:dev', 'postcss'],
             },
             index: {
                 files: ['src/index.html'],
@@ -126,14 +132,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-pngmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-targethtml');
 
     grunt.registerTask('builddev', ['browserify:app', 'browserify:vendors', 'targethtml:dev']);
-    grunt.registerTask('buildprod', ['browserify:bundle', 'uglify', 'targethtml:prod', 'stylus:prod', 'autoprefixer']);
+    grunt.registerTask('buildprod', ['browserify:bundle', 'uglify', 'targethtml:prod', 'stylus:prod', 'postcss']);
     grunt.registerTask('run',   ['builddev', 'connect', 'watch']);
 
 };
