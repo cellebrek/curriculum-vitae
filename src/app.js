@@ -13,5 +13,4 @@ App.module('main', MainModule);
 App.start();
 Backbone.history.start();
 
-
 module.exports = App;

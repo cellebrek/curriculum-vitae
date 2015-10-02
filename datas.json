@@ -1,94 +1,32 @@
 {
-	"blog": {
-		"articles": [
-			{
-				"id": 0,
-				"title": "Freeze your face off",
-				"content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lacus nec odio bibendum dapibus eget ut urna. Donec <strong>venenatis tempus</strong> lectus et tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent fringilla dapibus magna, id vulputate nulla. Quisque nec felis lobortis, hendrerit dui vitae, aliquam nisl. Nam ut justo in neque elementum convallis. Curabitur placerat, felis quis tincidunt bibendum, nunc augue suscipit massa, ac iaculis diam metus nec urna. Praesent urna velit, lobortis sit amet lorem sit amet, rhoncus convallis turpis.</p><p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Similique, libero ratione ipsa nesciunt sint et nihil cumque eligendi hic deleniti nam ad ipsam quidem animi culpa voluptas molestiae. Reprehenderit, aperiam?</p>",
-				"slider": [
-					{
-						"src": "assets/media/images/slider-image.jpg",
-						"alt": "The Man Who Climbed The Wall",
-						"title": "The Man Who Climbed The Wall",
-						"label": "CLIENT / AGENCY"
-					},
-					{
-						"src": "assets/media/images/slider-image.jpg",
-						"alt": "The Man Who Climbed The Wall",
-						"title": "The Man Who Climbed The Wall",
-						"label": "CLIENT / AGENCY"
-					},
-					{
-						"src": "assets/media/images/slider-image.jpg",
-						"alt": "The Man Who Climbed The Wall",
-						"title": "The Man Who Climbed The Wall",
-						"label": "CLIENT / AGENCY"
-					}
-				]
-			},
-			{
-				"id": 1,
-				"title": "Just a random article",
-				"content": "<p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Similique, libero ratione ipsa nesciunt sint et nihil cumque eligendi hic deleniti nam ad ipsam quidem animi culpa voluptas molestiae. Reprehenderit, aperiam?</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lacus nec odio bibendum dapibus eget ut urna. Donec <strong>venenatis tempus</strong> lectus et tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent fringilla dapibus magna, id vulputate nulla. Quisque nec felis lobortis, hendrerit dui vitae, aliquam nisl. Nam ut justo in neque elementum convallis. Curabitur placerat, felis quis tincidunt bibendum, nunc augue suscipit massa, ac iaculis diam metus nec urna. Praesent urna velit, lobortis sit amet lorem sit amet, rhoncus convallis turpis.</p>",
-				"gallery": [
-					{
-						"thumb": "assets/media/images/gallery/1.jpg",
-						"full": "assets/media/images/gallery/1-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/2.jpg",
-						"full": "assets/media/images/gallery/2-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/3.jpg",
-						"full": "assets/media/images/gallery/3-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/4.jpg",
-						"full": "assets/media/images/gallery/4-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/5.jpg",
-						"full": "assets/media/images/gallery/5-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/6.jpg",
-						"full": "assets/media/images/gallery/6-large.jpg"
-					},
-				]
-			}
-		]
-	},
-	"footer": {
-		"widgets": [
-			{
-				"type": "classical",
-				"title": "Location",
-				"content": "<p>48 Beak Street<br>London<br>W1F 9RL</p>"
-			},
-			{
-				"type": "classical",
-				"title": "Contact",
-				"content": "<span>Sam Matthews</span><br><span>CEO</span><br><a href=\"mailto:hello@neverbland.com\">e: hello@neverbland.com</a>"
-			},
-			{
-				"type": "form",
-				"title": "Newsletter",
-				"elements": [
-					{
-						"type": "email"
-					},
-					{
-						"type": "button",
-						"value": "Submit"
-					}
-				]
-			},
-			{
-				"type": "list",
-				"title": "Navigation",
-				"elements": ["Home", "Work", "Directors", "News", "About", "Contact"]
-			}
-		]
-	}
+	"resume":[
+		{
+			"title": "exemple de titre",
+			"categories": [
+				{
+					"title": "titre de la categorie",
+					"dateBegin": "2014",
+					"dateEnd": "Today",
+					"description": "Lorem ipsum niktamerum"
+				}
+			]
+		},
+		{
+			"title": "exemple de titre",
+			"categories": [
+				{
+					"title": "titre de la categorie",
+					"dateBegin": "2014",
+					"dateEnd": "Today",
+					"description": "Lorem ipsum niktamerum"
+				},
+				{
+					"title": "titre de la categorie",
+					"dateBegin": "2014",
+					"dateEnd": "Today",
+					"description": "Lorem ipsum niktamerum"
+				}
+			]
+		}
+	]
 }

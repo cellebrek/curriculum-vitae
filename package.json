@@ -19,6 +19,7 @@
   },
   "private": true,
   "dependencies": {
+    "autoprefixer": "^6.0.3",
     "backbone": "1.2.1",
     "backbone.localstorage": "^1.1.16",
     "backbone.marionette": "^2.4.1",

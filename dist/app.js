@@ -1,98 +1,37 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports={
-	"blog": {
-		"articles": [
-			{
-				"id": 0,
-				"title": "Freeze your face off",
-				"content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lacus nec odio bibendum dapibus eget ut urna. Donec <strong>venenatis tempus</strong> lectus et tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent fringilla dapibus magna, id vulputate nulla. Quisque nec felis lobortis, hendrerit dui vitae, aliquam nisl. Nam ut justo in neque elementum convallis. Curabitur placerat, felis quis tincidunt bibendum, nunc augue suscipit massa, ac iaculis diam metus nec urna. Praesent urna velit, lobortis sit amet lorem sit amet, rhoncus convallis turpis.</p><p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Similique, libero ratione ipsa nesciunt sint et nihil cumque eligendi hic deleniti nam ad ipsam quidem animi culpa voluptas molestiae. Reprehenderit, aperiam?</p>",
-				"slider": [
-					{
-						"src": "assets/media/images/slider-image.jpg",
-						"alt": "The Man Who Climbed The Wall",
-						"title": "The Man Who Climbed The Wall",
-						"label": "CLIENT / AGENCY"
-					},
-					{
-						"src": "assets/media/images/slider-image.jpg",
-						"alt": "The Man Who Climbed The Wall",
-						"title": "The Man Who Climbed The Wall",
-						"label": "CLIENT / AGENCY"
-					},
-					{
-						"src": "assets/media/images/slider-image.jpg",
-						"alt": "The Man Who Climbed The Wall",
-						"title": "The Man Who Climbed The Wall",
-						"label": "CLIENT / AGENCY"
-					}
-				]
-			},
-			{
-				"id": 1,
-				"title": "Just a random article",
-				"content": "<p>Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Similique, libero ratione ipsa nesciunt sint et nihil cumque eligendi hic deleniti nam ad ipsam quidem animi culpa voluptas molestiae. Reprehenderit, aperiam?</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lacus nec odio bibendum dapibus eget ut urna. Donec <strong>venenatis tempus</strong> lectus et tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent fringilla dapibus magna, id vulputate nulla. Quisque nec felis lobortis, hendrerit dui vitae, aliquam nisl. Nam ut justo in neque elementum convallis. Curabitur placerat, felis quis tincidunt bibendum, nunc augue suscipit massa, ac iaculis diam metus nec urna. Praesent urna velit, lobortis sit amet lorem sit amet, rhoncus convallis turpis.</p>",
-				"gallery": [
-					{
-						"thumb": "assets/media/images/gallery/1.jpg",
-						"full": "assets/media/images/gallery/1-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/2.jpg",
-						"full": "assets/media/images/gallery/2-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/3.jpg",
-						"full": "assets/media/images/gallery/3-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/4.jpg",
-						"full": "assets/media/images/gallery/4-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/5.jpg",
-						"full": "assets/media/images/gallery/5-large.jpg"
-					},
-					{
-						"thumb": "assets/media/images/gallery/6.jpg",
-						"full": "assets/media/images/gallery/6-large.jpg"
-					},
-				]
-			}
-		]
-	},
-	"footer": {
-		"widgets": [
-			{
-				"type": "classical",
-				"title": "Location",
-				"content": "<p>48 Beak Street<br>London<br>W1F 9RL</p>"
-			},
-			{
-				"type": "classical",
-				"title": "Contact",
-				"content": "<span>Sam Matthews</span><br><span>CEO</span><br><a href=\"mailto:hello@neverbland.com\">e: hello@neverbland.com</a>"
-			},
-			{
-				"type": "form",
-				"title": "Newsletter",
-				"elements": [
-					{
-						"type": "email"
-					},
-					{
-						"type": "button",
-						"value": "Submit"
-					}
-				]
-			},
-			{
-				"type": "list",
-				"title": "Navigation",
-				"elements": ["Home", "Work", "Directors", "News", "About", "Contact"]
-			}
-		]
-	}
+	"resume":[
+		{
+			"title": "exemple de titre",
+			"categories": [
+				{
+					"title": "titre de la categorie",
+					"dateBegin": "2014",
+					"dateEnd": "Today",
+					"description": "Lorem ipsum niktamerum"
+				}
+			]
+		},
+		{
+			"title": "exemple de titre",
+			"categories": [
+				{
+					"title": "titre de la categorie",
+					"dateBegin": "2014",
+					"dateEnd": "Today",
+					"description": "Lorem ipsum niktamerum"
+				},
+				{
+					"title": "titre de la categorie",
+					"dateBegin": "2014",
+					"dateEnd": "Today",
+					"description": "Lorem ipsum niktamerum"
+				}
+			]
+		}
+	]
 }
+
 },{}],2:[function(require,module,exports){
 'use strict';
 
@@ -875,7 +814,6 @@ App.module('main', MainModule);
 App.start();
 Backbone.history.start();
 
-
 module.exports = App;
 
 },{"./modules/main/module":13,"backbone":"backbone","backbone.marionette":"backbone.marionette","jquery":"jquery"}],12:[function(require,module,exports){
@@ -963,7 +901,7 @@ module.exports = Marionette.AppRouter.extend({
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<div data-resume></div>\n";
+    return "<div data-resume></div>\r\n";
 },"useData":true});
 
 },{"hbsfy/runtime":10}],16:[function(require,module,exports){
@@ -990,7 +928,7 @@ module.exports = Marionette.LayoutView.extend({
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<div class=\"l-resume__wrapper\">\n	<div class=\"l-resume__title\">\n		<h1>Natan Kerbellec</h1>\n		<h2>Front-End Web Developer</h2>\n	</div>\n\n	<!-- PERSONAL INFORMATION -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>PERSONAL INFORMATION</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list l-resume__detail-list--personal\">\n			<h3>PERSONAL INFORMATION</h3>\n			<li>\n				<div class=\"l-resume__float-detail\">Telephone</div>\n				<p>Mobile: (+33) 601851670</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">E-mail</div>\n				<p>n.kerbellec@gmail.com</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Nationality</div>\n				<p>French</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Date of birth</div>\n				<p>15 June 1987</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Gender</div>\n				<p>Male</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Driving License</div>\n				<p>Category B</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Personal Website</div>\n				<p><a href=\"http://www.natankerbellec.com\" target=\"_blank\">www.natankerbellec.com</a></p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- SKILLS & COMPETENCIES -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>SKILLS & COMPETENCIES</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list\">\n			<h3>SKILLS & COMPETENCIES</h3>\n			<li>\n				<div class=\"l-resume__float-detail\">Personal</div>\n				<p>• Responsible, rigorous and self-discipline.</p>\n				<p>• Good analytical and ability in teamwork.</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Computer</div>\n				<p>• HTML, CSS3, CSS Pre/post processors</p>\n				<p>• Javascript, jQuery, Webapp Cordova (iOS, Android)</p>\n				<p>• Handlebars, Twig</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Good CSS practices</div>\n				<p>• BEM, SMACSS, Concentric CSS, Maximum CSS3 animations, SVG</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Current Frameworks used</div>\n				<p>• jQuery, Velocity, Leaflet, Isotope, Slick, Magnific Popup</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Applications</div>\n				<p>• Adobe Illustrator / Photoshop, Atom IDE</p>\n			</li>\n	   </ul>\n	</div>\n\n	<!-- WORK EXPERIENCE -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>WORK EXPERIENCE</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list\">\n			<li>\n				<h3>WORK EXPERIENCE</h3>\n				<div class=\"l-resume__float-detail\">Position<br>Activities</div>\n				<div class=\"l-resume__date\">2011 - Today</div>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n			</li>\n			<li>\n				<h3>WORK EXPERIENCE</h3>\n				<div class=\"l-resume__float-detail\">Position<br>Activities</div>\n				<div class=\"l-resume__date\">2011 - Today</div>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- EDUCATION & TRAINING -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>EDUCATION & TRAINING</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list\">\n			<li>\n				<h3>EDUCATION & TRAINING</h3>\n				<div class=\"l-resume__float-detail\">Position<br>Activities</div>\n				<div class=\"l-resume__date\">2011 - Today</div>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n			</li>\n			<li>\n				<h3>EDUCATION & TRAINING</h3>\n				<div class=\"l-resume__float-detail\">Position<br>Activities</div>\n				<div class=\"l-resume__date\">2011 - Today</div>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n				<p>Founder & Owner of “cloudnine” studio, Freelancer</p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- LANGUAGES -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>LANGUAGES</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list l-resume__detail-list--small\">\n			<li>\n				<h3>LANGUAGES</h3>\n				<div class=\"l-resume__float-detail\">Native Language</div>\n				<p>French</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Other language(s)</div>\n				<p>English</p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- HOBBIES -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>HOBBIES</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list l-resume__detail-list--small\">\n			<li>\n				<h3>HOBBIES</h3>\n				<div class=\"l-resume__float-detail\">Photography</div>\n				<p><a href=\"http://www.cellebrek.com\" target=\"_blank\">www.cellebrek.com</a></p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Bicycle</div>\n				<p><a href=\"http://www.rennesfixedgear.com\" target=\"_blank\">www.rennesfixedgear.com</a></p>\n			</li>\n		</ul>\n	</div>\n</div>\n";
+    return "<div class=\"l-resume__wrapper\">\n	<div class=\"l-resume__title\">\n		<h1>Natan Kerbellec</h1>\n		<h2>Front-End Web Developer</h2>\n	</div>\n\n	<!-- PERSONAL INFORMATION -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>PERSONAL INFORMATION</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list l-resume__detail-list--personal\">\n			<li>\n				<div class=\"l-resume__float-detail\">Telephone</div>\n				<p>Mobile: (+33) 601851670</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">E-mail</div>\n				<p>n.kerbellec@gmail.com</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Nationality</div>\n				<p>French</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Date of birth</div>\n				<p>15 June 1987</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Gender</div>\n				<p>Male</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Driving License</div>\n				<p>Category B</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Personal Website</div>\n				<p><a href=\"http://www.natankerbellec.com\" target=\"_blank\">www.natankerbellec.com</a></p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- SKILLS & COMPETENCIES -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>SKILLS & COMPETENCIES</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list\">\n			<li>\n				<div class=\"l-resume__float-detail\">Personal</div>\n				<p class=\"l-resume__bullet\">Responsible, rigorous and self-discipline.</p>\n				<p>Good analytical and ability in teamwork.</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Computer</div>\n				<p class=\"l-resume__bullet\">HTML, CSS3, CSS Pre/post processors</p>\n				<p>Javascript, jQuery, Webapp Cordova (iOS, Android)</p>\n				<p>Handlebars, Twig</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Good CSS practices</div>\n				<p class=\"l-resume__bullet\">BEM, SMACSS, Concentric CSS, Maximum CSS3 animations, SVG</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Current Frameworks used</div>\n				<p class=\"l-resume__bullet\">jQuery, Velocity, Leaflet, Isotope, Slick, Magnific Popup</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Applications</div>\n				<p class=\"l-resume__bullet\">Adobe Illustrator / Photoshop, Atom IDE</p>\n			</li>\n	   </ul>\n	</div>\n\n	<!-- WORK EXPERIENCE -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>WORK EXPERIENCE</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list\">\n			<li>\n				<div class=\"l-resume__float-detail\">Groupe Regards</div>\n				<div class=\"l-resume__date\">2012 - Today</div>\n				<p><strong>Front-end web developper</strong></p>\n				<p>Web application (iOS / Android)</p>\n				<p>Versionning: Git / Gitlabs / Mercurial</p>\n				<p>Continuous integration: Jenkins</p>\n				<p>Agile method: SCRUM</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Sogeti</div>\n				<div class=\"l-resume__date\">2008 - 2012</div>\n				<p>Operating integrator</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">MICROFIRST SAS</div>\n				<div class=\"l-resume__date\">2007 - 2008</div>\n				<p>Network & System Technician (alternately)</p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- EDUCATION & TRAINING -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>EDUCATION & TRAINING</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list\">\n			<li>\n				<div class=\"l-resume__float-detail\">ENI - IT School</div>\n				<div class=\"l-resume__date\">2007 - 2008</div>\n				<p>Technician in computer networks & system administration (alternately)</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Notre Dame de la Paix</div>\n				<div class=\"l-resume__date\">2006 - 2007</div>\n				<p>BTS IT, Network Systems Manager</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Notre Dame de la Paix</div>\n				<div class=\"l-resume__date\">2006 - 2007</div>\n				<p>BTS IT, Network Systems Manager</p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- LANGUAGES -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>LANGUAGES</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list l-resume__detail-list--small\">\n			<li>\n				<div class=\"l-resume__float-detail\">Native Language</div>\n				<p>French (native)</p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Other language(s)</div>\n				<p>English (professionally operational)</p>\n			</li>\n		</ul>\n	</div>\n\n	<!-- HOBBIES -->\n	<div class=\"l-resume__category\">\n		<ul class=\"l-resume__category-list\">\n			<h3>HOBBIES</h3>\n		</ul>\n\n		<ul class=\"l-resume__detail-list l-resume__detail-list--small\">\n			<li>\n				<div class=\"l-resume__float-detail\">Photography</div>\n				<p><a href=\"http://www.cellebrek.com\" target=\"_blank\">www.cellebrek.com</a></p>\n			</li>\n			<li>\n				<div class=\"l-resume__float-detail\">Bicycle</div>\n				<p><a href=\"http://www.rennesfixedgear.com\" target=\"_blank\">www.rennesfixedgear.com</a></p>\n			</li>\n		</ul>\n	</div>\n</div>\n";
 },"useData":true});
 
 },{"hbsfy/runtime":10}],18:[function(require,module,exports){

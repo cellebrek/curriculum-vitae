@@ -66,7 +66,7 @@
     font-size: 0;
 
 	h3 {
-	    margin: 0 0 10px 0;
+        margin: 0 0 10px -2px;
 		text-align: left;
 		font-weight: 700;
 	    font-size: 1.5rem;
@@ -128,18 +128,18 @@
 	}
 
 	h3 {
-		color: white;
+		visibility: hidden;
 	}
 
 	li {
-	    margin: 15px 0;
+        margin: 10px 0;
 
 		&:last-child {
 			margin-bottom: 0;
 		}
 
 		&:first-child {
-			margin-top: 0;
+			@media $medium { margin-top: 25px; }
 		}
 
 		h3 {
@@ -151,9 +151,24 @@
 		}
 
 		p {
-	        margin: 3px 0;
+            margin: 4px 0;
+			
+			strong {
+			    font-weight: 500;
+			}
 		}
 	}
+}
+
+.l-resume__bullet:before {
+	content:""
+	width: 8px;
+	height: 8px;
+	background: #ddd;
+	position: absolute;
+	margin-left: -13px;
+	margin-top: 5px;
+	border-radius: 100%;
 }
 
 .l-resume__detail-list--personal {
@@ -171,7 +186,7 @@
 }
 
 .l-resume__date {
-    margin: 10px 0 5px 0;
+    margin: 20px 0 5px 0;
     font-weight: 700;
 	font-size: 1.6rem;
 
